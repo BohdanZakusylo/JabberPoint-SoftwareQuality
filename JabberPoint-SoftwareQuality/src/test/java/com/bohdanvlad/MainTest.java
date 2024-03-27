@@ -11,7 +11,6 @@ class MainTest
     @Test
     void testingMaven()
     {
-
         assertEquals(2, Main.testingMaven());
     }
 }
