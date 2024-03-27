@@ -6,4 +6,9 @@ public class Main
     {
         System.out.println("Hello world!");
     }
+
+    public static int testingMaven()
+    {
+        return 2;
+    }
 }
