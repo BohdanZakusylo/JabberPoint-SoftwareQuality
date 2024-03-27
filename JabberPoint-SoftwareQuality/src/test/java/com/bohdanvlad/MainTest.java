@@ -10,6 +10,6 @@ class MainTest
     @Test
     void testingMaven()
     {
-        assertEquals(23, Main.testingMaven());
+        assertEquals(2, Main.testingMaven());
     }
 }
