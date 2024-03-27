@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc3d798-23a1-472b-b731-a5e6eaf81bb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AboutBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/AboutBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/Accessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BitmapItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/BitmapItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DemoPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/DemoPresentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/JabberPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/KeyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/Slide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SlideItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/SlideItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/SlideViewerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SlideViewerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/SlideViewerFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/Style.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TextItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/TextItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohdanvlad/XMLAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +29,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bohdanzakusylo/Desktop/JabberPoint-SoftwareQuality&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RunManager">
     <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="MAIN_CLASS_NAME" value="JabberPoint" />
       <module name="JabberPoint-SoftwareQuality" />
       <method v="2">
@@ -71,6 +59,8 @@
       <workItem from="1711404508410" duration="1626000" />
       <workItem from="1711560937167" duration="2344000" />
       <workItem from="1711565450975" duration="379000" />
+      <workItem from="1711567332950" duration="64000" />
+      <workItem from="1711567412383" duration="69000" />
     </task>
     <servers />
   </component>
