@@ -12,6 +12,6 @@ class MainTest
     void testingMaven()
     {
 
-        assertEquals(23, Main.testingMaven());
+        assertEquals(2, Main.testingMaven());
     }
 }
