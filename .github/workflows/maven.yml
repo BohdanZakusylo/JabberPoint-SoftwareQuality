@@ -33,8 +33,3 @@ jobs:
 
     - name: Run tests with Maven
       run: mvn -B package test --file pom.xml
-    - name: Upload JAR artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: JabberPoint-SoftwareQuality-1.0-SNAPSHOT
-        path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
