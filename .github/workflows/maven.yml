@@ -37,4 +37,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: JabberPoint-SoftwareQuality-1.0-SNAPSHOT
-        path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
+        path: JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
