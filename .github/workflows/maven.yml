@@ -44,6 +44,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         IGNORE_GENERATED_FILES: true
         VALIDATE_ALL_CODEBASE: true
+        RUN_CHECKSTYLE: true
         LINTER_RULES_PATH: checkstyle.xml
         CHECKSTYLE_RULESET: 'checkstyle.xml'
 
