@@ -49,6 +49,9 @@
     </module>
 
     <module name="TreeWalker">
+        <module name="JavadocPackage">
+            <property name="format" value="html"/>
+        </module>
         <module name="OuterTypeFilename"/>
         <module name="IllegalTokenText">
             <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
