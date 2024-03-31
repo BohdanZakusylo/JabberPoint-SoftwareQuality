@@ -39,6 +39,6 @@ jobs:
         name: JabberPoint-SoftwareQuality-1.0-SNAPSHOT
         path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
     - name: Check code with super-linter
-      uses: super-linter/super-linter@v6.3.0
+      uses: github/super-linter@v4
 
 
