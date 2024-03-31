@@ -49,9 +49,6 @@
     </module>
 
     <module name="TreeWalker">
-        <module name="JavadocPackage">
-            <property name="format" value="html"/>
-        </module>
         <module name="OuterTypeFilename"/>
         <module name="IllegalTokenText">
             <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
@@ -86,7 +83,6 @@
                     LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_FOR, LITERAL_IF,
                     LITERAL_SWITCH, LITERAL_SYNCHRONIZED, LITERAL_TRY, LITERAL_WHILE, METHOD_DEF,
                     OBJBLOCK, STATIC_INIT, RECORD_DEF, COMPACT_CTOR_DEF"/>
-            <property name="option" value="nl"/>
         </module>
         <module name="RightCurly">
             <property name="id" value="RightCurlySame"/>
@@ -101,12 +97,6 @@
                       value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
                     INSTANCE_INIT, ANNOTATION_DEF, ENUM_DEF, INTERFACE_DEF, RECORD_DEF,
                     COMPACT_CTOR_DEF, LITERAL_SWITCH"/>
-        </module>
-        <module name="MethodDeclaration">
-            <property name="option" value="nl"/>
-            <property name="tokens" value="METHOD_DEF"/>
-            <property name="id" value="LeftCurly"/>
-            <property name="format" value="METHOD_DEF:.*\{[\t\f ]*"/>
         </module>
         <module name="SuppressionXpathSingleFilter">
             <!-- suppresion is required till https://github.com/checkstyle/checkstyle/issues/7541 -->
