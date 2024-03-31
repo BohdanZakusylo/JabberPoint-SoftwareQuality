@@ -38,14 +38,14 @@ jobs:
       with:
         name: JabberPoint-SoftwareQuality-1.0-SNAPSHOT
         path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
-    - name: Check code with super-linter
-      uses: github/super-linter@v4
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        IGNORE_GENERATED_FILES: true
-        VALIDATE_ALL_CODEBASE: true
-        RUN_CHECKSTYLE: true
-        LINTER_RULES_PATH: checkstyle.xml
-        CHECKSTYLE_RULESET: 'checkstyle.xml'
-
-
+#    - name: Check code with super-linter
+#      uses: github/super-linter@v4
+#      env:
+#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        IGNORE_GENERATED_FILES: true
+#        VALIDATE_ALL_CODEBASE: true
+#        RUN_CHECKSTYLE: true
+#        LINTER_RULES_PATH: checkstyle.xml
+#        CHECKSTYLE_RULESET: 'checkstyle.xml'
+    - name: Check Code Style
+      run: mvn checkstyle:check
