@@ -59,6 +59,28 @@
                 </configuration>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <configLocation>Checkstyle.xml</configLocation>
+                    <sourceDirectories>
+                        <sourceDirectory>${basedir}/src/main/java/com/bohdanvlad/</sourceDirectory>
+                        <sourceDirectory>${basedir}src/test/java/com/bohdanvlad/</sourceDirectory>
+                    </sourceDirectories>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
