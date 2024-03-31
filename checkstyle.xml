@@ -1,67 +1,10 @@
-<?xml version="1.0"?>
-<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
-        "https://checkstyle.org/dtds/configuration_1_3.dtd">
-
+<!DOCTYPE module PUBLIC
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 <module name="Checker">
-    <!-- Set Charset -->
-    <property name="charset" value="UTF-8"/>
-
-    <!-- Set Severity Level -->
-    <property name="severity" value="warning"/>
-
-    <!-- Specify File Extensions -->
-    <property name="fileExtensions" value="java"/>
-
-    <!-- Line Length Check -->
-    <module name="LineLength">
-        <property name="max" value="100"/>
-        <property name="ignorePattern" value="^import\s.*|^package\s.*"/>
+    <module name="TreeWalker">
+        <module name="AvoidStarImport">
+            <property name="severity" value="warning" />
+        </module>
     </module>
-
-    <!-- Empty Block Check -->
-    <module name="EmptyBlock">
-        <property name="option" value="TEXT"/>
-        <property name="tokens" value="LITERAL_DO, LITERAL_WHILE, LITERAL_FOR"/>
-    </module>
-
-    <!-- Right Curly Brace Check -->
-    <module name="RightCurly">
-        <property name="id" value="RightCurlyAlone"/>
-        <property name="option" value="alone"/>
-        <property name="tokens"
-                  value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
-                ANNOTATION_DEF, ENUM_DEF, INTERFACE_DEF"/>
-    </module>
-
-    <!-- Left Curly Brace Check -->
-    <module name="LeftCurly">
-        <property name="tokens"
-                  value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
-                ANNOTATION_DEF, ENUM_DEF, INTERFACE_DEF"/>
-        <property name="option" value="nl"/>
-    </module>
-
-    <!-- Method Length Check -->
-    <module name="MethodLength">
-        <property name="max" value="30"/>
-        <property name="tokens" value="METHOD_DEF"/>
-    </module>
-
-    <!-- Parameter Name Check -->
-    <module name="ParameterName">
-        <property name="format" value="^[a-z][a-z0-9]*$"/>
-    </module>
-
-    <!-- Method Name Check -->
-    <module name="MethodName">
-        <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
-    </module>
-
-    <!-- Class Type Parameter Name Check -->
-    <module name="ClassTypeParameterName">
-        <property name="format" value="^[A-Z][a-zA-Z0-9]*$"/>
-    </module>
-
-    <!-- No Finalizer Check -->
-    <module name="NoFinalizer"/>
 </module>
