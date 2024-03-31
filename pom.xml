@@ -76,6 +76,8 @@
                 </executions>
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
+                    <consoleOutput>true</consoleOutput>
+                    <failsOnError>true</failsOnError>
                     <sourceDirectories>
                         <sourceDirectory>${basedir}/src/main/java/com/bohdanvlad/</sourceDirectory>
                         <sourceDirectory>${basedir}src/test/java/com/bohdanvlad/</sourceDirectory>
