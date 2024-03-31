@@ -39,14 +39,14 @@
             <property name="option" value="alone"/>
             <property name="tokens"
                       value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
-                    INSTANCE_INIT, ANNOTATION_DEF, ENUM_DEF, INTERFACE_DEF"/>
+                    ANNOTATION_DEF, ENUM_DEF, INTERFACE_DEF"/>
         </module>
 
         <!-- Left Curly Brace Check -->
         <module name="LeftCurly">
             <property name="tokens"
                       value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
-                    INSTANCE_INIT, ANNOTATION_DEF, ENUM_DEF, INTERFACE_DEF"/>
+                    ANNOTATION_DEF, ENUM_DEF, INTERFACE_DEF"/>
             <property name="option" value="nl"/>
         </module>
 
