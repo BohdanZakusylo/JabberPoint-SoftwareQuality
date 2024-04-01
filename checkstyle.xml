@@ -64,7 +64,6 @@
     <module name="EmptyLineSeparator">
         <property name="allowMultipleEmptyLines" value="true"/>
         <property name="allowNoEmptyLineBetweenFields" value="true"/>
-        <property name="allowNoEmptyLineBetweenMethods" value="true"/>
     </module>
 
     <module name="EmptyLineBeforeReturn"/>
