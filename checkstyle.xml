@@ -35,15 +35,17 @@
             <property name="basicOffset" value="4"/>
         </module>
     </module>
+    <module name="TreeWalker">
+        <module name="LeftCurly"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="RightCurly"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="NeedBraces"/>
+    </module>
 
-    <!--            <property name="braceAdjustment" value="0"/>-->
-    <!--            <property name="caseIndent" value="2"/>-->
-    <!--            <property name="throwsIndent" value="4"/>-->
-    <!--            <property name="lineWrappingIndentation" value="2"/>-->
-    <!--            <property name="arrayInitIndent" value="2"/>-->
-    <!--            <module name="LeftCurly"/>-->
-    <!--            <module name="RightCurly"/>-->
-    <!--            <module name="NeedBraces"/>-->
+
 
     <module name="TreeWalker">
         <module name="WhitespaceAround">
@@ -52,8 +54,12 @@
         </module>
     </module>
 
-    <module name="MethodParamPad"/>
-    <module name="ParenPad"/>
+    <module name="TreeWalker">
+        <module name="MethodParamPad"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="ParenPad"/>
+    </module>
 
     <module name="EmptyLineSeparator">
         <property name="allowMultipleEmptyLines" value="true"/>
