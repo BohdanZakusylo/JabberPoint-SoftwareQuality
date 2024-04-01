@@ -74,6 +74,13 @@ jobs:
           distribution: 'adopt'
           cache: maven
 
+      - name: Authenticate with Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          service_account: ${{ secrets.JAR_DEPLOYMENT_EMAIL }}
+          credentials_json: ${{ secrets.JAR_DEPLOYMENT_KEY }}
+          project_id: github-actions-jar-deployment
+
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
@@ -87,33 +94,36 @@ jobs:
           name: JabberPoint-SoftwareQuality-1.0-SNAPSHOT
           path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/
 
+      - name: Upload JAR file to Google Cloud Storage
+        uses: google-github-actions/upload-cloud-storage@v2
+        with:
+          path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
+          destination: software-quality-jar/
+
       - name: List contents of /home/runner/work/
         run: ls /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/
 
       - name: Check Code Style
         run: mvn checkstyle:check
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Authenticate with Google Cloud
-        uses: google-github-actions/auth@v2
-        with:
-          service_account: ${{ secrets.JAR_DEPLOYMENT_EMAIL }}
-          credentials_json: ${{ secrets.JAR_DEPLOYMENT_KEY }}
-          project_id: github-actions-jar-deployment
-
-      - name: List contents of /home/runner/work/
-        run: ls /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/
-
-      - name: Upload JAR file to Google Cloud Storage
-        uses: google-github-actions/upload-cloud-storage@v2
-        with:
-          path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
-          destination: software-quality-jar/
+#  deploy:
+#    needs: build
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v3
+#
+#      - name: Authenticate with Google Cloud
+#        uses: google-github-actions/auth@v2
+#        with:
+#          service_account: ${{ secrets.JAR_DEPLOYMENT_EMAIL }}
+#          credentials_json: ${{ secrets.JAR_DEPLOYMENT_KEY }}
+#          project_id: github-actions-jar-deployment
+#
+#      - name: Upload JAR file to Google Cloud Storage
+#        uses: google-github-actions/upload-cloud-storage@v2
+#        with:
+#          path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
+#          destination: software-quality-jar/
 
