@@ -31,15 +31,12 @@
     </module>
 
     <!-- Unit Testing -->
-    <module name="TreeWalker">
-        <module name="FileTabCharacter"/>
-        <module name="SeparatorWrap">
-            <property name="id" value="SeparateTestMethods"/>
-            <property name="tokens" value="METHOD_DEF"/>
-            <property name="format" value="void test[A-Z][a-zA-Z0-9_]*_howIsTested_expectedResult()"/>
-            <property name="checkSeparator" value="true"/>
-            <property name="minLineCount" value="1"/>
-        </module>
+    <module name="SeparatorWrap">
+        <property name="id" value="SeparateTestMethods"/>
+        <property name="tokens" value="METHOD_DEF"/>
+        <property name="format" value="void test[A-Z][a-zA-Z0-9_]*_howIsTested_expectedResult()"/>
+        <property name="checkSeparator" value="true"/>
+        <property name="minLineCount" value="1"/>
     </module>
 
     <!-- Layout Conventions -->
@@ -53,32 +50,4 @@
     <module name="NeedBraces"/>
 
     <module name="WhitespaceAround">
-        <property name="allowEmptyConstructors" value="true"/>
-        <property name="tokens" value="ASSIGN"/>
-    </module>
-
-    <module name="MethodParamPad"/>
-    <module name="ParenPad"/>
-
-    <module name="EmptyLineSeparator">
-        <property name="allowMultipleEmptyLines" value="true"/>
-        <property name="allowNoEmptyLineBetweenFields" value="true"/>
-        <property name="allowNoEmptyLineBetweenDifferentFieldTypes" value="true"/>
-        <property name="allowNoEmptyLineBetweenMethods" value="true"/>
-    </module>
-
-    <module name="EmptyLineBeforeReturn"/>
-
-    <!-- Ordering -->
-    <module name="DeclarationOrder"/>
-
-    <!-- Getter and Setter Ordering -->
-    <module name="CustomImportOrder">
-        <property name="customImportOrderRules" value="STATIC_IMPORTS_LAST"/>
-        <property name="separateLineBetweenGroups" value="true"/>
-    </module>
-
-    <!-- Enum Constants on Separate Lines -->
-    <module name="EnumDeclaration"/>
-
-</module>
+        <property nam
