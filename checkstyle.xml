@@ -30,15 +30,19 @@
         <property name="fileExtensions" value="java"/>
     </module>
 
-<!--    &lt;!&ndash; Layout Conventions &ndash;&gt;-->
-<!--    <module name="Indentation">-->
-<!--        <property name="basicOffset" value="4"/>-->
-<!--    </module>-->
-
-    <module name="LeftCurly"/>
-    <module name="RightCurly"/>
-
-    <module name="NeedBraces"/>
+    <module name="TreeWalker">
+        <module name="Indentation">
+            <property name="basicOffset" value="4"/>
+<!--            <property name="braceAdjustment" value="0"/>-->
+<!--            <property name="caseIndent" value="2"/>-->
+<!--            <property name="throwsIndent" value="4"/>-->
+<!--            <property name="lineWrappingIndentation" value="2"/>-->
+<!--            <property name="arrayInitIndent" value="2"/>-->
+            <module name="LeftCurly"/>
+            <module name="RightCurly"/>
+            <module name="NeedBraces"/>
+        </module>
+    </module>
 
     <module name="WhitespaceAround">
         <property name="allowEmptyConstructors" value="true"/>
