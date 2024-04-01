@@ -30,10 +30,10 @@
         <property name="fileExtensions" value="java"/>
     </module>
 
-    <!-- Layout Conventions -->
-    <module name="Indentation">
-        <property name="basicOffset" value="4"/>
-    </module>
+<!--    &lt;!&ndash; Layout Conventions &ndash;&gt;-->
+<!--    <module name="Indentation">-->
+<!--        <property name="basicOffset" value="4"/>-->
+<!--    </module>-->
 
     <module name="LeftCurly"/>
     <module name="RightCurly"/>
