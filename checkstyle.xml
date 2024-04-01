@@ -30,12 +30,6 @@
         <property name="fileExtensions" value="java"/>
     </module>
 
-    <!-- Method Naming -->
-    <module name="MethodName">
-        <property name="format" value="^[gs]et[A-Z].*"/>
-        <property name="message" value="Accessor and mutator methods should follow the 'get'/'set' prefix convention."/>
-    </module>
-
     <!-- Unit Testing -->
     <module name="TreeWalker">
         <module name="FileTabCharacter"/>
