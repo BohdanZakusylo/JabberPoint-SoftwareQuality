@@ -45,7 +45,8 @@
     <!--            <module name="RightCurly"/>-->
     <!--            <module name="NeedBraces"/>-->
 
-    <module name="WhitespaceAround">
+    <module name="TreeWalker">
+        <module name="WhitespaceAround"/>
         <property name="allowEmptyConstructors" value="true"/>
         <property name="tokens" value="ASSIGN"/>
     </module>
