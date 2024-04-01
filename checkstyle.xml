@@ -30,9 +30,6 @@
         <property name="fileExtensions" value="java"/>
     </module>
 
-    <!-- Unit Testing -->
-    <module name="FileTabCharacter"/>
-
     <!-- Layout Conventions -->
     <module name="Indentation">
         <property name="basicOffset" value="4"/>
@@ -71,5 +68,8 @@
 
     <!-- Enum Constants on Separate Lines -->
     <module name="EnumDeclaration"/>
+
+    <!-- Unit Testing -->
+    <module name="FileTabCharacter"/>
 
 </module>
