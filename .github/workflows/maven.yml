@@ -87,6 +87,9 @@ jobs:
           name: JabberPoint-SoftwareQuality-1.0-SNAPSHOT
           path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/
 
+      - name: List contents of /home/runner/work/
+        run: ls /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/
+
       - name: Check Code Style
         run: mvn checkstyle:check
 
