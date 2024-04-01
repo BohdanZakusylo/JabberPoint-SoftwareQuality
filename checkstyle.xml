@@ -50,4 +50,35 @@
     <module name="NeedBraces"/>
 
     <module name="WhitespaceAround">
-        <property nam
+        <property name="allowEmptyConstructors" value="true"/>
+        <property name="tokens" value="ASSIGN"/>
+    </module>
+
+    <module name="MethodParamPad"/>
+    <module name="ParenPad"/>
+
+    <module name="EmptyLineSeparator">
+        <property name="allowMultipleEmptyLines" value="true"/>
+        <property name="allowNoEmptyLineBetweenFields" value="true"/>
+        <property name="allowNoEmptyLineBetweenDifferentFieldTypes" value="true"/>
+        <property name="allowNoEmptyLineBetweenMethods" value="true"/>
+    </module>
+
+    <module name="EmptyLineBeforeReturn"/>
+
+    <!-- Ordering -->
+    <module name="DeclarationOrder"/>
+
+    <!-- Getter and Setter Ordering -->
+    <module name="CustomImportOrder">
+        <property name="customImportOrderRules" value="STATIC_IMPORTS_LAST"/>
+        <property name="separateLineBetweenGroups" value="true"/>
+    </module>
+
+    <!-- Enum Constants on Separate Lines -->
+    <module name="EnumDeclaration"/>
+
+    <!-- FileTabCharacter -->
+    <module name="FileTabCharacter"/>
+
+</module>
