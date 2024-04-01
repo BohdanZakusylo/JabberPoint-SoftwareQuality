@@ -31,12 +31,8 @@
     </module>
 
     <!-- Unit Testing -->
-    <module name="SeparatorWrap">
-        <property name="id" value="SeparateTestMethods"/>
-        <property name="tokens" value="METHOD_DEF"/>
-        <property name="format" value="void test[A-Z][a-zA-Z0-9_]*_howIsTested_expectedResult()"/>
-        <property name="checkSeparator" value="true"/>
-        <property name="minLineCount" value="1"/>
+    <module name="TreeWalker">
+        <module name="FileTabCharacter"/>
     </module>
 
     <!-- Layout Conventions -->
@@ -77,8 +73,5 @@
 
     <!-- Enum Constants on Separate Lines -->
     <module name="EnumDeclaration"/>
-
-    <!-- FileTabCharacter -->
-    <module name="FileTabCharacter"/>
 
 </module>
