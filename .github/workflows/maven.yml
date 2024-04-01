@@ -85,7 +85,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: JabberPoint-SoftwareQuality-1.0-SNAPSHOT
-          path: JabberPoint-SoftwareQuality/src/
+          path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/
 
       - name: Check Code Style
         run: mvn checkstyle:check
@@ -108,6 +108,6 @@ jobs:
       - name: Upload JAR file to Google Cloud Storage
         uses: google-github-actions/upload-cloud-storage@v2
         with:
-          path: JabberPoint-SoftwareQuality/pom.xml
+          path: /home/runner/work/JabberPoint-SoftwareQuality/JabberPoint-SoftwareQuality/target/JabberPoint-SoftwareQuality-1.0-SNAPSHOT.jar
           destination: software-quality-jar/
 
