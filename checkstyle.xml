@@ -31,9 +31,7 @@
     </module>
 
     <!-- Unit Testing -->
-    <module name="TreeWalker">
-        <module name="FileTabCharacter"/>
-    </module>
+    <module name="FileTabCharacter"/>
 
     <!-- Layout Conventions -->
     <module name="Indentation">
