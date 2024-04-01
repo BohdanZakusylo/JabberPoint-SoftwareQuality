@@ -1,10 +1,63 @@
+<?xml version="1.0"?>
 <!DOCTYPE module PUBLIC
         "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
         "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
 <module name="Checker">
+    <!-- Naming Conventions -->
     <module name="TreeWalker">
-        <module name="AvoidStarImport">
-            <property name="severity" value="warning" />
+        <!-- Class names start with a capital letter -->
+        <module name="TypeName">
+            <property name="format" value="^[A-Z][a-zA-Z0-9]*$"/>
+        </module>
+        <!-- Methods and variable names start with lowercase letters -->
+        <module name="MethodName">
+            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
+        </module>
+        <!-- Constants are written in UPPERCASE -->
+        <module name="ConstantName">
+            <property name="format" value="^[A-Z][A-Z0-9_]*$"/>
         </module>
     </module>
+
+    <!-- Layout Conventions -->
+    <module name="TreeWalker">
+        <!-- One level of indentation is four spaces -->
+        <module name="Indentation">
+            <property name="basicOffset" value="4"/>
+        </module>
+        <!-- Braces for class method and structural blocks are on separate lines -->
+        <module name="LeftCurly">
+            <property name="option" value="alone"/>
+        </module>
+        <!-- Use a space around operators -->
+        <module name="WhitespaceAround">
+            <property name="tokens" value="ASSIGN, PLUS, MINUS, STAR, DIV, MOD"/>
+        </module>
+        <!-- Use a space between parameters of a method -->
+        <module name="MethodParamPad"/>
+        <!-- Use a space between keywords and the opening parenthesis -->
+        <module name="WhitespaceAfter">
+            <property name="allowEmptyMethods" value="true"/>
+            <property name="allowEmptyTypes" value="true"/>
+            <property name="allowEmptyLoops" value="true"/>
+            <property name="tokens" value="FOR, IF, WHILE"/>
+        </module>
+    </module>
+
+    <!-- Unit Testing Conventions -->
+    <module name="TreeWalker">
+        <!-- For methods of Unit Tests -->
+        <module name="MethodName">
+            <property name="format" value="^[a-z][a-zA-Z0-9]*_[a-zA-Z0-9]*_[a-zA-Z0-9]*$"/>
+        </module>
+    </module>
+
+    <!-- Project Structure (Java) -->
+    <module name="RegexpMultiline">
+        <property name="format" value="^com\.nhlstenden\..*"/>
+        <property name="message" value="Package name should follow com.nhlstenden.projectname"/>
+        <property name="illegalPattern" value="true"/>
+    </module>
+
 </module>

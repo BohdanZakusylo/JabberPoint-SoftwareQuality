@@ -1,0 +1,31 @@
+name: Check coding conventions
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  checkstyle:
+    name: Check Coding Conventions
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run Checkstyle
+        run: mvn checkstyle:checkstyle
+
+      - name: Upload Checkstyle results
+        uses: actions/upload-artifact@v3
+        with:
+          name: checkstyle-results
+          path: target/site/checkstyle.html
