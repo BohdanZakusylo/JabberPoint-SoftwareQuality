@@ -47,8 +47,8 @@
 
     <module name="TreeWalker">
         <module name="WhitespaceAround"/>
-        <property name="allowEmptyConstructors" value="true"/>
-        <property name="tokens" value="ASSIGN"/>
+            <property name="allowEmptyConstructors" value="true"/>
+            <property name="tokens" value="ASSIGN"/>
     </module>
 
     <module name="MethodParamPad"/>
