@@ -100,8 +100,8 @@ jobs:
       - name: Authenticate with Google Cloud
         uses: google-github-actions/auth@v2
         with:
-          service_account_email: ${{ secrets.JAR_DEPLOYMENT_EMAIL }}
-          service_account_key: ${{ secrets.JAR_DEPLOYMENT_KEY }}
+          service_account: ${{ secrets.JAR_DEPLOYMENT_EMAIL }}
+          credentials_json: ${{ secrets.JAR_DEPLOYMENT_KEY }}
           project_id: github-actions-jar-deployment
 
       - name: Upload JAR file to Google Cloud Storage
