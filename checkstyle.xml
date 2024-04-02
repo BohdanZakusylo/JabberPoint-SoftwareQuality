@@ -38,11 +38,5 @@
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
 
-        <!-- Add EmptyLineBeforeReturn module under TreeWalker -->
-        <module name="CustomImportOrder">
-            <property name="customImportOrderRules" value="STATIC_IMPORTS_LAST"/>
-            <property name="separateLineBetweenGroups" value="true"/>
-        </module>
-
     </module>
 </module>
