@@ -10,7 +10,6 @@ public class Main
     public static int testingMaven()
     {
 
-
         return 2;
     }
 }
