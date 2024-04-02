@@ -33,30 +33,16 @@
             <property name="severity" value="warning" />
         </module>
 
-        <module name="MethodParamPad"/>
-
-        <!-- Add ParenPad module under TreeWalker -->
-        <module name="ParenPad"/>
-
-        <!-- Add EmptyLineSeparator module under TreeWalker -->
         <module name="EmptyLineSeparator">
             <property name="allowMultipleEmptyLines" value="true"/>
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
 
         <!-- Add EmptyLineBeforeReturn module under TreeWalker -->
-        <module name="EmptyLineBeforeReturn"/>
-
-        <!-- Add DeclarationOrder module under TreeWalker -->
-        <module name="DeclarationOrder"/>
-
-        <!-- Add CustomImportOrder module under TreeWalker -->
         <module name="CustomImportOrder">
             <property name="customImportOrderRules" value="STATIC_IMPORTS_LAST"/>
             <property name="separateLineBetweenGroups" value="true"/>
         </module>
 
-        <!-- Add EnumDeclaration module under TreeWalker -->
-        <module name="EnumDeclaration"/>
     </module>
 </module>
