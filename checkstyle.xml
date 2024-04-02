@@ -33,13 +33,6 @@
             <property name="severity" value="warning" />
         </module>
 
-        <!-- Add WhitespaceAround module under TreeWalker -->
-        <module name="WhitespaceAround">
-            <property name="allowEmptyConstructors" value="true"/>
-            <property name="tokens" value="ASSIGN"/>
-        </module>
-
-        <!-- Add MethodParamPad module under TreeWalker -->
         <module name="MethodParamPad"/>
 
         <!-- Add ParenPad module under TreeWalker -->
