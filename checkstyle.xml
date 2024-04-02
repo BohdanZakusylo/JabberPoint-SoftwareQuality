@@ -31,5 +31,41 @@
         <module name="AvoidStarImport">
             <property name="severity" value="warning" />
         </module>
+        <module name="WhitespaceAround">
+            <property name="allowEmptyConstructors" value="true"/>
+            <property name="tokens" value="ASSIGN"/>
+        </module>
+    </module>
+
+    <module name="TreeWalker">
+        <module name="MethodParamPad"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="ParenPad"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="EmptyLineSeparator">
+            <property name="allowMultipleEmptyLines" value="true"/>
+            <property name="allowNoEmptyLineBetweenFields" value="true"/>
+        </module>
+    </module>
+
+    <module name="TreeWalker">
+        <module name="EmptyLineBeforeReturn"/>
+    </module>
+
+    <module name="TreeWalker">
+        <module name="DeclarationOrder"/>
+    </module>
+
+    <module name="TreeWalker">
+        <module name="CustomImportOrder">
+            <property name="customImportOrderRules" value="STATIC_IMPORTS_LAST"/>
+            <property name="separateLineBetweenGroups" value="true"/>
+        </module>
+    </module>
+
+    <module name="TreeWalker">
+        <module name="EnumDeclaration"/>
     </module>
 </module>
